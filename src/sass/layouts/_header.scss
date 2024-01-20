@@ -1,0 +1,8 @@
+@use '../utilities/variables';
+
+.header__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px;
+}

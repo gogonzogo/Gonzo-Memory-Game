@@ -1,0 +1,24 @@
+@import './utilities/variables';
+@import './utilities/marvel-styles';
+@import './utilities/classic-styles';
+@import './utilities/pokemon-styles';
+
+@import './layouts/card-gallery';
+
+@import './layouts/footer';
+@import './layouts/game-board';
+@import './layouts/game-menu';
+@import './layouts/header';
+@import './layouts/mobile-menu';
+
+@import './componets/buttons';
+@import './componets/contacts';
+@import './componets/login-form';
+@import './componets/score';
+@import './componets/social-links';
+@import './componets/timer';
+@import './componets/user-stats';
+
+@import './base/containers';
+@import './base/global';
+@import './base/sections';

@@ -1,0 +1,201 @@
+@use '../utilities/variables';
+
+.game-menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.game-menu__title {
+  font-family: getFontFamily('primary-font');
+  font-size: getFontSize('xxx-large-font');
+  color: black;
+  text-align: center;
+  margin: 20px;
+}
+
+.difficulty__container {
+  margin-bottom: 20px;
+}
+
+.difficulty__list-title {
+  font-family: getFontFamily('primary-font');
+  font-size: getFontSize('x-large-font');
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.difficulty__list {
+  cursor: pointer;
+}
+
+.difficulty__list-item {
+  font-family: getFontFamily('primary-font');
+  font-size: getFontSize('small-font');
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    scale: 1.1;
+    color: white;
+    border: 1px solid black;
+    background-color: red;
+    text-align: center;
+  }
+}
+
+.chosen-difficulty {
+  scale: 1.4;
+  color: white;
+  border: 1px solid black;
+  background-color: red;
+  text-align: center;
+
+  &:hover,
+    &:focus {
+      scale: 1.4;
+      border: 1px solid black;
+      background-color: red;
+      text-align: center;
+    }
+}
+
+.style__list-container {
+  margin-bottom: 30px;
+}
+
+.style__list-title {
+  font-family: getFontFamily('primary-font');
+  font-size: getFontSize('x-large-font');
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.style__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+.style__list-item {
+
+  &:hover,
+  &:focus {
+    scale: 1.1;
+  }
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.chosen-style {
+  scale: 1.4;
+
+  &:hover,
+  &:focus {
+    scale: 1.5;
+  }
+}
+
+.marvel-style__icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.classic-style__option {
+  width: 50px;
+  height: 70px;
+  border-radius: 0.25em;
+  border: 3px solid white;
+  background-color: #f2f2f8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23f40000' fill-opacity='1'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.pokemon-style__img {
+  display: block;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.game-buttons__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.play__button,
+.continue__button,
+.open__login-modal{
+  font-family: getFontFamily('primary-font');
+  font-size: getFontSize('medium-font');
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 30px;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.page__secondary-title {
+  font-family: getFontFamily('primary-font');
+  font-size: getFontSize('xxx-large-font');
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+  .game-menu__title {
+    font-size: getFontSize('xxxxx-large-font');
+  }
+
+  .difficulty__list-title {
+    font-size: getFontSize('xxxx-large-font');
+    margin-bottom: 15px;
+  }
+
+  .difficulty__list-item {
+    font-size: getFontSize('xxx-large-font');
+  }
+
+  .style__list-title {
+    font-size: getFontSize('xxxx-large-font');
+    margin-bottom: 25px;
+  }
+
+  .marvel-style__icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .classic-style__option {
+    width: 100px;
+    height: 130px;
+  }
+
+  .pokemon-style__img {
+    width: 95px;
+  }
+
+  .play__button,
+  .continue__button {
+    font-size: getFontSize('xxx-large-font');
+  }
+
+  .page__secondary-title {
+    font-size: getFontSize('xxxxx-large-font');
+  }
+}
